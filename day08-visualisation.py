@@ -25,7 +25,7 @@ zpos = np.zeros(xpos.shape)
 fig = plt.figure(figsize=(10, 10))
 ax = fig.add_subplot(111, projection='3d')
 
-colors = plt.cm.jet(data.flatten()/float(data.max()))
+colors = plt.cm.Greens(data.flatten()/float(data.max()))
 ax.bar3d(xpos,ypos,zpos, .5,.5,data.flatten(), color=colors)
 
 ax.set_xlabel('X')
