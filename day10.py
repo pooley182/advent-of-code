@@ -28,9 +28,9 @@ def tick():
     if pos < 0:
         pos = 39
     if pos == sprite_a or pos == sprite_b or pos == sprite_c:
-        print('#', end='')
+        print('▒▒', end='')
     else:
-        print(' ', end='')
+        print('  ', end='')
 
     if clock_cycles % 40 == 0:
         print()
